@@ -101,7 +101,7 @@ for i in range(rows):
             try:
                 st.image(img_path, use_container_width=True)
             except Exception:
-                st.image(Image.new("RGB",(600,400),(230,230,230)), use_container_width=True, caption="圖片讀取失敗")
+                st.image(Image.new("RGB",(600,400),(230,230,230)), use_container_width=True, caption="範例")
             st.markdown(f"**型號**：{item['型號']}")
             st.markdown(f"**規格**：{item['規格']}")
             st.markdown(f"**材質**：{item['材質']}")
